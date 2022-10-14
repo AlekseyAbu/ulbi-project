@@ -1,5 +1,8 @@
 {
   "testPrimer": "test primer",
   "translate": "translate",
-  "404Text": "Page not found"
+  "404Text": "Page not found",
+  "reactError": "An unexpected error has occurred",
+  "updateTextButton": "Refresh the page",
+  "throwError": "throw error"
 }
