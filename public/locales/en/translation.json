@@ -4,5 +4,8 @@
   "404Text": "Page not found",
   "reactError": "An unexpected error has occurred",
   "updateTextButton": "Refresh the page",
-  "throwError": "throw error"
+  "throwError": "throw error",
+  "MainPage": "Main page",
+  "aboutPage": "About page",
+  "toggle": "toggle"
 }
