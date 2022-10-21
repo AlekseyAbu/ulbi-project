@@ -12,7 +12,6 @@ function App() {
     return (
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
-                <LangSwitcher />
                 <Navbar />
                 <div className="content-page">
                     <Sidebar />

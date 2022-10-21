@@ -7,5 +7,7 @@
   "throwError": "вызвать ошибку",
   "MainPage": "Главная страница",
   "aboutPage": "О себе",
-  "toggle": "переключение"
+  "toggle": "переключение",
+  "shortLang": "Английский",
+  "lang": "EN"
 }

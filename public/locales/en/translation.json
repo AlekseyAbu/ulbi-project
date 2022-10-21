@@ -7,5 +7,7 @@
   "throwError": "throw error",
   "MainPage": "Main page",
   "aboutPage": "About page",
-  "toggle": "toggle"
+  "toggle": "toggle",
+  "shortLang": "Russia",
+  "lang": "RU"
 }
