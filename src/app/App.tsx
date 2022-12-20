@@ -8,12 +8,8 @@ import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
 import { Modal } from 'shared/ui/Modal/Modal';
 
 function App() {
-    const { theme } = useTheme();
-
-    const [isOpen, setIsOpen] = useState(false);
-
     return (
-        <div className={classNames('app', {}, [theme])}>
+        <div className={classNames('app', {}, [])}>
 
             <Suspense fallback="">
                 <Navbar />
