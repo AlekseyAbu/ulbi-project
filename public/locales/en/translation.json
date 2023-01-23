@@ -10,5 +10,7 @@
   "toggle": "toggle",
   "shortLang": "Russia",
   "lang": "RU",
-  "sighIn": "login"
+  "sighIn": "login",
+  "loginInput": "Enter username",
+  "passInput": "Enter password"
 }

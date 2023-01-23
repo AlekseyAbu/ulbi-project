@@ -10,5 +10,7 @@
   "toggle": "переключение",
   "shortLang": "Английский",
   "lang": "EN",
-  "sighIn": "Войти"
+  "sighIn": "Войти",
+  "loginInput": "Введите логин",
+  "passInput": "Введите пароль"
 }

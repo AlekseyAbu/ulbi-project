@@ -1,10 +1,15 @@
 {
   "MainPage": "",
   "aboutPage": "",
+  "loginInput": "",
+  "passInput": "",
   "reactError": "",
   "sighIn": "",
   "throwError": "",
   "toggle": "",
   "updateTextButton": "",
+  "Введите логин": "",
+  "Введите пароль": "",
+  "Ввидеите пароль": "",
   "Страница не найдена": ""
 }
