@@ -12,5 +12,8 @@
   "lang": "RU",
   "sighIn": "login",
   "loginInput": "Enter username",
-  "passInput": "Enter password"
+  "passInput": "Enter password",
+  "titleAuth": "Authorization form",
+  "errorAuth": "You have entered an incorrect username and password",
+  "logOut": "Exit"
 }
