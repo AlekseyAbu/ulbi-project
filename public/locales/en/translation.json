@@ -15,5 +15,6 @@
   "passInput": "Enter password",
   "titleAuth": "Authorization form",
   "errorAuth": "You have entered an incorrect username and password",
-  "logOut": "Exit"
+  "logOut": "Exit",
+  "profilePage": "PROFILE PAGE"
 }
