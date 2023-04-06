@@ -17,5 +17,6 @@
   "errorAuth": "You have entered an incorrect username and password",
   "logOut": "Exit",
   "profilePage": "PROFILE PAGE",
-  "Укажите страну": "Укажите страну"
+  "Укажите страну": "Укажите страну",
+  "ARTICLES PAGE": "ARTICLES PAGE"
 }
