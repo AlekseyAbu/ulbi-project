@@ -21,13 +21,11 @@ export const Avatar = ({
     }), [size]);
 
     return (
-        <div className={classNames('', {}, [className])}>
-            <img
-                src={src}
-                alt={alt}
-                style={styles}
-                className={classNames(cls.Avatar, mods, [className])}
-            />
-        </div>
+        <img
+            src={src}
+            alt={alt}
+            style={styles}
+            className={classNames(cls.Avatar, mods, [className])}
+        />
     );
 };

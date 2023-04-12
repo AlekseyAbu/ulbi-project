@@ -18,5 +18,7 @@
   "logOut": "Exit",
   "profilePage": "PROFILE PAGE",
   "Укажите страну": "Укажите страну",
-  "ARTICLES PAGE": "ARTICLES PAGE"
+  "ARTICLES PAGE": "ARTICLES PAGE",
+  "Произошла ошибка при загрузке статьи": "Произошла ошибка при загрузке статьи",
+  "Копировать": "Копировать"
 }
