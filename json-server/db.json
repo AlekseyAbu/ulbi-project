@@ -19,7 +19,9 @@
       "img": "https://repository-images.githubusercontent.com/242067697/b6b36a80-83cc-11ea-94f7-a520c3d1b941",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -87,6 +89,30 @@
       "text": "some comment",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "dfds",
+      "id": "qwn54Wu"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "dfds",
+      "id": "0-szJZp"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "dfds",
+      "id": "r8qLfX8"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "dknf",
+      "id": "TVr2mwL"
     }
   ],
   "users": [
@@ -101,18 +127,32 @@
       "id": "2",
       "username": "user",
       "password": "123",
-      "role":  "USER",
+      "role": "USER",
       "avatar": "https://pixelbox.ru/wp-content/uploads/2021/09/avatar-boys-vk-60-scaled.jpg"
     }
   ],
-  "profile": {
-    "first": "Aleksey",
-    "lastname": "Abu",
-    "age": 25,
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "Moscow",
-    "username": "admin",
-    "avatar": "https://pixelbox.ru/wp-content/uploads/2021/09/avatar-boys-vk-60-scaled.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Aleksey",
+      "lastname": "Abu",
+      "age": 25,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "admin",
+      "avatar": "https://pixelbox.ru/wp-content/uploads/2021/09/avatar-boys-vk-60-scaled.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Aleksey",
+      "lastname": "Ivanov",
+      "age": 20,
+      "currency": "USD",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "admin1",
+      "avatar": "https://pixelbox.ru/wp-content/uploads/2021/09/avatar-boys-vk-60-scaled.jpg"
+    }
+  ]
 }
