@@ -1,19 +1,19 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
-import { Article } from 'entities/Article';
-import { ArticleBlockType, ArticleType } from 'entities/Article/model/types/article';
-import { ArticleDetails } from './ArticleDetails';
+import {
+    Article, ArticleBlockType, ArticleType, ArticleView,
+} from '../../model/types/article';
+import { ArticleList } from './ArticleList';
 
 export default {
-    title: 'entities/Article/ArticleDetails',
-    component: ArticleDetails,
+    title: 'entities/Article/ArticleList',
+    component: ArticleList,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-} as ComponentMeta<typeof ArticleDetails>;
+} as ComponentMeta<typeof ArticleList>;
 
-const Template: ComponentStory<typeof ArticleDetails> = (args) => <ArticleDetails {...args} />;
+const Template: ComponentStory<typeof ArticleList> = (args) => <ArticleList {...args} />;
 
 const article: Article = {
     id: '1',
@@ -62,26 +62,40 @@ const article: Article = {
     ],
 };
 
-export const Normal = Template.bind({});
-Normal.args = {};
-Normal.decorators = [StoreDecorator({
-    articleDetails: {
-        data: article,
-    },
-})];
+export const LoadingBig = Template.bind({});
+LoadingBig.args = {
+    isLoading: true,
+    articles: [],
+    view: ArticleView.BIG,
+};
 
-export const Loading = Template.bind({});
-Loading.args = {};
-Loading.decorators = [StoreDecorator({
-    articleDetails: {
-        isLoading: true,
-    },
-})];
+export const LoadingSmall = Template.bind({});
+LoadingSmall.args = {
+    isLoading: true,
+    articles: [],
+    view: ArticleView.SMALL,
+};
 
-export const Error = Template.bind({});
-Error.args = {};
-Error.decorators = [StoreDecorator({
-    articleDetails: {
-        error: 'error',
-    },
-})];
+export const ListSmall = Template.bind({});
+ListSmall.args = {
+    isLoading: false,
+    articles: new Array(9)
+        .fill(0)
+        .map((item, index) => ({
+            ...article,
+            id: String(index),
+        })),
+    view: ArticleView.SMALL,
+};
+
+export const ListBig = Template.bind({});
+ListBig.args = {
+    isLoading: false,
+    articles: new Array(9)
+        .fill(0)
+        .map((item, index) => ({
+            ...article,
+            id: String(index),
+        })),
+    view: ArticleView.BIG,
+};

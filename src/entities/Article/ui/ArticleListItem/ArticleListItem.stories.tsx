@@ -1,19 +1,17 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
-import { Article } from 'entities/Article';
-import { ArticleBlockType, ArticleType } from 'entities/Article/model/types/article';
-import { ArticleDetails } from './ArticleDetails';
+import {
+    Article, ArticleBlockType, ArticleType, ArticleView,
+} from '../../model/types/article';
+import { ArticleListItem } from './ArticleListItem';
 
 export default {
-    title: 'entities/Article/ArticleDetails',
-    component: ArticleDetails,
+    title: 'entities/Article/ArticleListItem',
+    component: ArticleListItem,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-} as ComponentMeta<typeof ArticleDetails>;
-
-const Template: ComponentStory<typeof ArticleDetails> = (args) => <ArticleDetails {...args} />;
+} as ComponentMeta<typeof ArticleListItem>;
 
 const article: Article = {
     id: '1',
@@ -62,26 +60,16 @@ const article: Article = {
     ],
 };
 
-export const Normal = Template.bind({});
-Normal.args = {};
-Normal.decorators = [StoreDecorator({
-    articleDetails: {
-        data: article,
-    },
-})];
+const Template: ComponentStory<typeof ArticleListItem> = (args) => <ArticleListItem {...args} />;
 
-export const Loading = Template.bind({});
-Loading.args = {};
-Loading.decorators = [StoreDecorator({
-    articleDetails: {
-        isLoading: true,
-    },
-})];
+export const Big = Template.bind({});
+Big.args = {
+    view: ArticleView.BIG,
+    article,
+};
 
-export const Error = Template.bind({});
-Error.args = {};
-Error.decorators = [StoreDecorator({
-    articleDetails: {
-        error: 'error',
-    },
-})];
+export const Small = Template.bind({});
+Small.args = {
+    view: ArticleView.SMALL,
+    article,
+};
