@@ -17,11 +17,11 @@ interface ArticleViewSelectorProps {
 const viewTypes = [
     {
         view: ArticleView.BIG,
-        icon: TiledIcon,
+        icon: ListIcon,
     },
     {
         view: ArticleView.SMALL,
-        icon: ListIcon,
+        icon: TiledIcon,
     },
 ];
 
