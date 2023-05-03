@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { memo } from 'react';
 import cls from './ArticleList.module.scss';
@@ -21,6 +20,12 @@ export const ArticleList = memo((props: ArticleListProps) => {
         view = ArticleView.SMALL,
     } = props;
 
+    const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.SMALL ? 9 : 3)
+        .fill(0)
+        .map((item, index) => (
+            <ArticleListItemSkeleton className={cls.card} key={index} view={view} />
+        ));
+
     const renderArticle = (article: Article) => (
         <ArticleListItem
             article={article}
@@ -35,7 +40,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
             {articles.length > 0
                 ? articles.map(renderArticle)
                 : null}
-            {isLoading && <ArticleListItemSkeleton className={cls.card} view={view} />}
+            {isLoading && getSkeletons(view)}
         </div>
     );
 });

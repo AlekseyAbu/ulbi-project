@@ -16,8 +16,6 @@ export const Page = (props: PageProps) => {
     const wrapperRef = useRef() as MutableRefObject<HTMLDivElement>;
     const triggerRef = useRef() as MutableRefObject<HTMLDivElement>;
 
-    console.log(onScrollEnd, '111');
-
     useInfiniteScroll({
         triggerRef,
         wrapperRef,
@@ -25,12 +23,12 @@ export const Page = (props: PageProps) => {
     });
 
     return (
-        <div
+        <section
             ref={wrapperRef}
             className={classNames(cls.Page, {}, [className])}
         >
             {children}
             <div ref={triggerRef} />
-        </div>
+        </section>
     );
 };
